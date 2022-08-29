@@ -5,10 +5,10 @@ install_requirements:
 	@pip install -r requirements.txt
 
 check_code:
-	@flake8 scripts/* leWagonProject/*.py
+	@flake8 scripts/* predict_stock_on_news/*.py
 
 black:
-	@black scripts/* leWagonProject/*.py
+	@black scripts/* predict_stock_on_news/*.py
 
 test:
 	@coverage run -m pytest tests/*.py
@@ -22,8 +22,8 @@ clean:
 	@rm -f .coverage
 	@rm -fr */__pycache__ */*.pyc __pycache__
 	@rm -fr build dist
-	@rm -fr leWagonProject-*.dist-info
-	@rm -fr leWagonProject.egg-info
+	@rm -fr predict_stock_on_news-*.dist-info
+	@rm -fr predict_stock_on_news.egg-info
 
 install:
 	@pip install . -U

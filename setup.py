@@ -5,7 +5,7 @@ with open('requirements.txt') as f:
     content = f.readlines()
 requirements = [x.strip() for x in content if 'git+' not in x]
 
-setup(name='leWagonProject',
+setup(name='predict_stock_on_news',
       version="1.0",
       description="Project Description",
       packages=find_packages(),
@@ -13,5 +13,5 @@ setup(name='leWagonProject',
       test_suite='tests',
       # include_package_data: to install data from MANIFEST.in
       include_package_data=True,
-      scripts=['scripts/leWagonProject-run'],
+      scripts=['scripts/predict_stock_on_news-run'],
       zip_safe=False)
