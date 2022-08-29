@@ -1,5 +1,6 @@
 # Data analysis
-- Document here the project: leWagonProject
+- Document here the project: predict_stock_on_news
+
 - Description: Project Description
 - Data Source:
 - Type of analysis:
@@ -22,15 +23,19 @@ Unittest test:
 make clean install test
 ```
 
-Check for leWagonProject in gitlab.com/{group}.
+Check for predict_stock_on_news in gitlab.com/{group}.
+
 If your project is not set please add it:
 
-- Create a new project on `gitlab.com/{group}/leWagonProject`
+- Create a new project on `gitlab.com/{group}/predict_stock_on_news`
+
 - Then populate it:
 
 ```bash
-##   e.g. if group is "{group}" and project_name is "leWagonProject"
-git remote add origin git@github.com:{group}/leWagonProject.git
+##   e.g. if group is "{group}" and project_name is "predict_stock_on_news"
+
+git remote add origin git@github.com:{group}/predict_stock_on_news.git
+
 git push -u origin master
 git push -u origin --tags
 ```
@@ -41,12 +46,14 @@ Functionnal test with a script:
 cd
 mkdir tmp
 cd tmp
-leWagonProject-run
+predict_stock_on_news-run
+
 ```
 
 # Install
 
-Go to `https://github.com/{group}/leWagonProject` to see the project, manage issues,
+Go to `https://github.com/{group}/predict_stock_on_news` to see the project, manage issues,
+
 setup you ssh public key, ...
 
 Create a python3 virtualenv and activate it:
@@ -59,8 +66,10 @@ deactivate; virtualenv -ppython3 ~/venv ; source ~/venv/bin/activate
 Clone the project and install it:
 
 ```bash
-git clone git@github.com:{group}/leWagonProject.git
-cd leWagonProject
+git clone git@github.com:{group}/predict_stock_on_news.git
+
+cd predict_stock_on_news
+
 pip install -r requirements.txt
 make clean install test                # install and test
 ```
@@ -70,5 +79,6 @@ Functionnal test with a script:
 cd
 mkdir tmp
 cd tmp
-leWagonProject-run
+predict_stock_on_news-run
+
 ```
