@@ -1,0 +1,9 @@
+numpy
+pandas
+nltk
+textblob
+vaderSentiment
+sklearn
+xgboost
+lightgbm
+tensorflow
