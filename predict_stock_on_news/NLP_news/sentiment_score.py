@@ -18,4 +18,4 @@ def label_sentiment(score):
             sentiment.append('Negative')
         else:
             sentiment.append('Neutral')
-    return
+    return sentiment
