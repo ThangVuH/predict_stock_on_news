@@ -10,7 +10,7 @@ from statsmodels.tools.eval_measures import rmse
 
 # Facebook specific
 # pip install pystan~=2.14  #This specific version of pystan must be installed to have fbprophet
-#pip install fbprophet
+# pip install fbprophet
 
 
 from fbprophet import Prophet
@@ -18,13 +18,15 @@ from fbprophet.plot import plot_plotly, plot_components_plotly
 from prophet.diagnostics import cross_validation
 from prophet.diagnostics import performance_metrics
 
-import sys
-sys.path.insert(1, "data/SP500_predict/")
-import data
-from data import df_main
 
+#### Import data from a function in another .py file (optional)
 
-data = df_main()
+# import sys
+# sys.path.insert(1, "data/SP500_predict/")
+# import data
+# from data import df_main
+# data = df_main()
+
 
 ## Choose your data by installing yahoo finance for example
 # Enter a dataframe with columns 'ds' for date in format yyyy-mm-dd and 'y' for the data
@@ -32,6 +34,7 @@ data = df_main()
 
 
 def data_processing(self):
+
     self = self.reset_index()
     df = self[['Date', 'Close']]
     df.columns = ['ds', 'y']
@@ -63,8 +66,14 @@ def forecasting(self):
 def plot_forecast(model, prediction):
   return plot_plotly(model, prediction)
 
-p = data_processing(data)
-m = fit_model(p)
-t = test_model(m, p)
-f = forecasting(m)
-print(f)
+############# Example of code ###############
+## Prepocess data
+# p = data_processing(data)
+### Fit model
+# m = fit_model(p)
+#### Test model
+# t = test_model(m, p)
+##### Forecast the future
+# f = forecasting(m)
+###### Plot forecast and data
+# plot_forecast(m, f)
