@@ -10,6 +10,7 @@ from lightgbm import LGBMClassifier
 
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
+# this model is using NLP sentiment for predict stock go up or down
 #----------------
 
 rf = RandomForestClassifier(random_state=42)
