@@ -8,6 +8,8 @@ from sklearn.naive_bayes import MultinomialNB
 from xgboost import XGBClassifier
 from lightgbm import LGBMClassifier
 
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+
 #----------------
 
 rf = RandomForestClassifier(random_state=42)
