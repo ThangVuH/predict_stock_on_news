@@ -30,12 +30,12 @@ from prophet.diagnostics import performance_metrics
 
 ## Choose your data by installing yahoo finance for example
 # Enter a dataframe with columns 'ds' for date in format yyyy-mm-dd and 'y' for the data
-# Tip, it is better to run the model on a 4 years time
+# Tip, it is better to run the model on a 2 to 4 years time
 
 
 def data_processing(self):
-
     self = self.reset_index()
+    self['Date'] >= '2018-01-01'
     df = self[['Date', 'Close']]
     df.columns = ['ds', 'y']
     return df
