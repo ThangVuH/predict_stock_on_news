@@ -1,7 +1,5 @@
 # imports
-from venv import create
 import pandas as pd
-import numpy as np
 from pandas_datareader import data as pdr
 from datetime import datetime
 
