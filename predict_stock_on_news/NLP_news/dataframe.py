@@ -2,17 +2,14 @@ from NLP_news.preprocessor import basic_cleaning
 from NLP_news.polar_subj import get_subjectivity, get_polarity
 from NLP_news.sentiment import sentiment_score, label_sentiment
 import pandas as pd
+import numpy as np
 import plotly.express as px
 import seaborn as sns
 from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
+# split dataset
+from sklearn.model_selection import train_test_split
 stopwords = set(STOPWORDS)
-
-# load dataset
-def data_kaggle():
-    #df_NYT = pd.read_csv("dataset_NYTimes.csv")
-    df_NYT= df_NYT.dropna()
-    return
 
 def create_dataframe():
 
@@ -89,3 +86,11 @@ def show_wordcloud(data, title = None):
 
     plt.imshow(wordcloud)
     plt.show()
+
+def split_data():
+    df_headlines = create_dataframe()
+    X=df_headlines[['Subjectivity','Polarity','compound','neg','pos','neu']]
+    X=np.array(X)
+    y= np.array(df_headlines['Label'])
+    x_train, x_test, y_train, y_test= train_test_split(X,y, test_size=0.2, random_state= 0)
+    return x_train, x_test, y_train, y_test
