@@ -2,7 +2,10 @@ from NLP_news.preprocessor import basic_cleaning
 from NLP_news.polar_subj import get_subjectivity, get_polarity
 from NLP_news.sentiment import sentiment_score, label_sentiment
 import pandas as pd
-import os
+import plotly.express as px
+from wordcloud import WordCloud, STOPWORDS
+import matplotlib.pyplot as plt
+stopwords = set(STOPWORDS)
 
 # load dataset
 def data_kaggle():
@@ -13,8 +16,9 @@ def data_kaggle():
 def create_dataframe():
 
     # Retrieve raw data
-    data_raw_path = os.path.join(LOCAL_DATA_PATH, "raw", f"train_{DATASET_SIZE}.csv")
-    data = pd.read_csv(data_raw_path, dtype=DTYPES_RAW_OPTIMIZED)
+    #data_raw_path = os.path.join(LOCAL_DATA_PATH, "raw", f"train_{DATASET_SIZE}.csv")
+    #data = pd.read_csv(data_raw_path, dtype=DTYPES_RAW_OPTIMIZED)
+    data = pd.read_csv("dataset_NYTimes.csv")
 
     # Clean data using ml_logic.data.clean_data
     # $CODE_BEGIN
@@ -40,3 +44,39 @@ def create_dataframe():
     data_cleaned["Sentiment"]=label_sentiment(score)
 
     return data_cleaned
+
+
+def plot_dataframe():
+    df_headlines = create_dataframe()
+    def plot_dataframe1():
+        fig_1 = px.scatter(df_headlines, x = create_dataframe.index , y ='compound', color = 'Sentiment' )
+        return fig_1.show()
+    def plot_dataframe2():
+        fig_2 =px.scatter(df_headlines, x = 'Polarity' , y ='Subjectivity', color = 'compound')
+        return fig_2.show()
+    def plot_dataframe3():
+        counts = (df_headlines['Sentiment'].value_counts(normalize=True) * 100)
+        fig_3 =px.bar(df_headlines, x = counts.index , y =counts)
+        return fig_3.show()
+    def plot_dataframe4():
+        fig_4 =px.scatter(df_headlines, x = df_headlines.index , y ='compound', color = 'Label')
+        return fig_4.show()
+
+def show_wordcloud(data, title = None):
+    wordcloud = WordCloud(
+        background_color='white',
+        stopwords=stopwords,
+        max_words=200,
+        max_font_size=40,
+        scale=3,
+        random_state=1 # chosen at random by flipping a coin; it was heads
+    ).generate(str(data))
+
+    fig = plt.figure(1, figsize=(12, 12))
+    plt.axis('off')
+    if title:
+        fig.suptitle(title, fontsize=20)
+        fig.subplots_adjust(top=2.3)
+
+    plt.imshow(wordcloud)
+    plt.show()
