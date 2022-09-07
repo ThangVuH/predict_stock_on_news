@@ -3,6 +3,7 @@ from NLP_news.polar_subj import get_subjectivity, get_polarity
 from NLP_news.sentiment import sentiment_score, label_sentiment
 import pandas as pd
 import plotly.express as px
+import seaborn as sns
 from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
 stopwords = set(STOPWORDS)
@@ -55,11 +56,19 @@ def plot_dataframe():
         fig_2 =px.scatter(df_headlines, x = 'Polarity' , y ='Subjectivity', color = 'compound')
         return fig_2.show()
     def plot_dataframe3():
-        counts = (df_headlines['Sentiment'].value_counts(normalize=True) * 100)
-        fig_3 =px.bar(df_headlines, x = counts.index , y =counts)
+        fig_3, ax = plt.subplots(figsize=(8, 8))
+
+        counts = df_headlines['Sentiment'].value_counts(normalize=True) * 100
+
+        sns.barplot(x=counts.index, y=counts, ax=ax)
+
+        ax.set_xticklabels(['Negative', 'Neutral', 'Positive'])
+        ax.set_ylabel("Percentage")
+
+        plt.show()
         return fig_3.show()
     def plot_dataframe4():
-        fig_4 =px.scatter(df_headlines, x = df_headlines.index , y ='compound', color = 'Label')
+        fig_4 =px.scatter(df_headlines, x = df_headlines.index , y ='compound', color = 'Label', color_continuous_scale='portland')
         return fig_4.show()
 
 def show_wordcloud(data, title = None):
