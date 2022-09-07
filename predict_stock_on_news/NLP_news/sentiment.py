@@ -1,6 +1,7 @@
 # sentiment score
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-
+import pandas as pd
+import plotly.express as px
 
 # create function to get the sentiment score:
 
@@ -37,3 +38,21 @@ def label_sentiment(score):
         else:
             sentiment.append('Neutral')
     return sentiment
+
+def plot_dataframe():
+
+    df_headlines = create_dataframe()
+
+    # Sentiment analysis
+    fig_1 = px.scatter(df_headlines, x = df_headlines.index , y ='compound', color = 'Sentiment' )
+    plot1 = fig_1.show()
+
+    #Pie chart
+    count1 = df_headlines['Sentiment'].value_counts()
+    dff = pd.DataFrame()
+    dff['name']= [str(i)for i in count1.index]
+    dff['number'] = count1.values
+    fig_2 = px.pie(dff, values="number", names="name")
+    plot2 = fig_2.show()
+
+    return plot1, plot2
