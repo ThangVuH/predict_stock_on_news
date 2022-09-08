@@ -6,6 +6,7 @@
 import pandas as pd
 import plotly.express as px
 from statsmodels.tools.eval_measures import rmse
+import numpy as np
 
 
 # Facebook specific
@@ -21,11 +22,11 @@ from prophet.diagnostics import performance_metrics
 
 #### Import data from a function in another .py file (optional)
 
-# import sys
-# sys.path.insert(1, "data/SP500_predict/")
-# import data
-# from data import df_main
-# data = df_main()
+import sys
+sys.path.insert(1, "../data/SP500_predict/")
+import data
+from data import df_main
+data = df_main()
 
 
 ## Choose your data by installing yahoo finance for example
