@@ -1,12 +1,13 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 4.2.1
-# Built for x86_64-pc-linux-gnu
-# Copyright (C) 1988-2016 Free Software Foundation, Inc.
-# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-# This is free software: you are free to change and redistribute it.
-# There is NO WARRANTY, to the extent permitted by law.
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
 
-# Make data base, printed on Mon Aug 29 16:57:13 2022
+# This program built for i386-apple-darwin11.3.0
+
+# Make data base, printed on Thu Sep  8 14:11:26 2022
 
 # Variables
 
@@ -15,11 +16,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # automatic
 ?F = $(notdir $?)
 # environment
-WSLENV = ELECTRON_RUN_AS_NODE/w:WT_SESSION::WT_PROFILE_ID
-# default
-.SHELLFLAGS := -c
+ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 HOMEBREW_NO_ANALYTICS = 1
+# environment
+LC_CTYPE = UTF-8
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -27,69 +28,57 @@ HOMEBREW_NO_ANALYTICS = 1
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /home/lauradata/code/ThangVuH/predict_stock_on_news
+CURDIR := /Users/philipsteffen/code/ThangVuH/predict_stock_on_news
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{"*":"fr"},"_languagePackId":"8a64477f85858ca31d1daacec93dba94.fr","_translationsConfigFile":"/home/lauradata/.vscode-server/data/clp/8a64477f85858ca31d1daacec93dba94.fr/tcf.json","_cacheRoot":"/home/lauradata/.vscode-server/data/clp/8a64477f85858ca31d1daacec93dba94.fr","_resolvedLanguagePackCoreLocation":"/home/lauradata/.vscode-server/data/clp/8a64477f85858ca31d1daacec93dba94.fr/e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"/home/lauradata/.vscode-server/data/clp/8a64477f85858ca31d1daacec93dba94.fr/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-_ = /mnt/c/Users/marte/AppData/Local/Programs/Microsoft VS Code/bin/code
+_ = /usr/bin/make
 # environment
-GOOGLE_APPLICATION_CREDENTIALS = /home/lauradata/code/LauraMartel/gcp/fluent-empire-360220-59c9d75475c8.json
-# makefile (from 'Makefile', line 1)
+GOOGLE_APPLICATION_CREDENTIALS = /Users/philipsteffen/Bootcamp/data-bootcamp-356012-730433357ee5.json
+# makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
-# 'override' directive
-GNUMAKEFLAGS := 
-# makefile (from 'Makefile', line 47)
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# makefile (from `Makefile', line 47)
 PYPI_USERNAME = <AUTHOR>
 # environment
-VSCODE_CWD = /mnt/c/Users/marte/AppData/Local/Programs/Microsoft VS Code
-# default
-MAKE_HOST := x86_64-pc-linux-gnu
+VSCODE_CWD = /Users/philipsteffen/code/ThangVuH/predict_stock_on_news
 # environment
-PATH = /home/lauradata/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/bin/remote-cli:./bin:./node_modules/.bin:/home/lauradata/.pyenv/plugins/pyenv-virtualenv/shims:/home/lauradata/.pyenv/shims:/home/lauradata/.rbenv/bin:/home/lauradata/.pyenv/plugins/pyenv-virtualenv/shims:/home/lauradata/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/Pandoc/:/mnt/c/Users/marte/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/marte/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/marte/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/marte/AppData/Local/Programs/Microsoft VS Code/bin:/usr/local/sbin
+PATH = /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:./bin:./node_modules/.bin:/Users/philipsteffen/.pyenv/plugins/pyenv-virtualenv/shims:/Users/philipsteffen/.pyenv/shims:/Users/philipsteffen/.rbenv/bin:/Users/philipsteffen/.pyenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/philipsteffen/.local/bin:/usr/local/sbin:/Users/philipsteffen/.local/bin
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
-# environment
-VIRTUAL_ENV = /home/lauradata/.pyenv/versions/3.8.12/envs/predict_stock_on_news
+VIRTUAL_ENV = /Users/philipsteffen/.pyenv/versions/3.8.12/envs/predict_stock_on_news
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-PYENV_ROOT = /home/lauradata/.pyenv
-# environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-cfc13f34-a3b9-4112-bfe2-044b01eb560b.sock
+PYENV_ROOT = /Users/philipsteffen/.pyenv
 # default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
-# environment
-SSH_AUTH_SOCK = /tmp/ssh-GHUCI18qCyMU/agent.362
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.wU8NPnmGtb/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-DISPLAY = :0
+PWD = /Users/philipsteffen/code/ThangVuH/predict_stock_on_news
 # environment
-PWD = /home/lauradata/code/ThangVuH/predict_stock_on_news
-# default
-.LOADED := 
-# environment
-SSH_AGENT_PID = 364
-# environment
-WSL_INTEROP = /run/WSL/3329_interop
-# environment
-PULSE_SERVER = /mnt/wslg/PulseServer
-# environment
-WT_SESSION = b1aaada4-1bb4-4a5f-bb38-3ca9cb9e0bbe
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 PYENV_SHELL = zsh
 # environment
-HOME = /home/lauradata
+HOME = /Users/philipsteffen
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
 # environment
-LOGNAME = lauradata
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/philipsteffen/Library/Application Support/Code/CachedData/784b0177c56c607789f9638da7b6bf3230d47a8c
+# environment
+LOGNAME = philipsteffen
 # environment
 BUNDLER_EDITOR = code
 # environment
@@ -101,57 +90,77 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
-MAKELEVEL := 0
+XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
+# environment
+LC_TERMINAL = iTerm2
+# environment
+SHLVL = 3
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = philipsteffen
+# makefile
+.DEFAULT_GOAL := install_requirements
 # default
 MAKECMDGOALS := all
 # environment
-SHLVL = 1
-# default
-MAKE_VERSION := 4.2.1
-# environment
-USER = lauradata
-# makefile
-.DEFAULT_GOAL := install_requirements
-# environment
-NAME = Code
+TERM_SESSION_ID = w0t3p0:45B32541-65FA-4B50-855B-27AE5858097E
 # environment
 LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
-# environment
-VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/marte/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
 # default
-MAKE_COMMAND := make
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
 # environment
-OLDPWD = /mnt/c/Users/marte/AppData/Local/Programs/Microsoft VS Code
+TERM_PROGRAM = iTerm.app
 # default
 .VARIABLES := 
+# environment
+TMPDIR = /var/folders/bq/zgzdq6650r544cvycgq5pj500000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-PYTHONPATH = /home/lauradata/code/LauraMartel/data-context-and-setup-olist:
-# makefile
-MAKEFLAGS = pqrR
+VSCODE_IPC_HOOK = /Users/philipsteffen/Library/Application Support/Code/1.71.0-main.sock
 # environment
-MFLAGS = -pqrR
+MallocNanoZone = 0
+# environment
+PYTHONPATH = /Users/philipsteffen/code/phelph/data-context-and-setup-olist:
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-NVM_DIR = /home/lauradata/.nvm
+TERM_PROGRAM_VERSION = 3.4.16
+# environment
+NVM_DIR = /Users/philipsteffen/.nvm
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.2552144.2552150.64AE4BAC-27FC-4EE3-A312-729F5B0C9728
+# environment
+LC_TERMINAL_VERSION = 3.4.16
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
 +F = $(notdir $+)
 # environment
-VSCODE_HANDLES_SIGPIPE = true
+ITERM_SESSION_ID = w0t3p0:45B32541-65FA-4B50-855B-27AE5858097E
 # environment
-WT_PROFILE_ID = {2c4de342-38b7-51cf-b940-2309a097f518}
+COLORFGBG = 7;0
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
 # automatic
 <F = $(notdir $<)
+# environment
+ITERM_PROFILE = Default
 # environment
 EDITOR = code
 # environment
@@ -161,29 +170,25 @@ LC_ALL = C
 # environment
 PYENV_VIRTUALENV_DISABLE_PROMPT = 1
 # environment
-PYENV_VIRTUAL_ENV = /home/lauradata/.pyenv/versions/3.8.12/envs/predict_stock_on_news
-# environment
-HOSTTYPE = x86_64
+PYENV_VIRTUAL_ENV = /Users/philipsteffen/.pyenv/versions/3.8.12/envs/predict_stock_on_news
 # automatic
 ^F = $(notdir $^)
 # default
 SUFFIXES := 
 # environment
-WAYLAND_DISPLAY = wayland-0
-# environment
 PYENV_VIRTUALENV_INIT = 1
 # default
-.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
-# default
-.RECIPEPREFIX := 
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
 # environment
 LANG = C
 # environment
 TERM = xterm-256color
 # environment
-WSL_DISTRO_NAME = Ubuntu
+VSCODE_PID = 3149
 # variable set hash-table stats:
-# Load=86/1024=8%, Rehash=0, Collisions=5/114=4%
+# Load=88/1024=9%, Rehash=0, Collisions=5/114=4%
 
 # Pattern-specific Variable Values
 
@@ -191,9 +196,9 @@ WSL_DISTRO_NAME = Ubuntu
 
 # Directories
 
-# . (device 2112, inode 274588): 17 files, no impossibilities.
+# . (device 16777225, inode 2287962): 23 files, no impossibilities.
 
-# 17 files, no impossibilities in 1 directories.
+# 23 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -205,31 +210,34 @@ black:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 11):
+#  commands to execute (from `Makefile', line 11):
 	@black scripts/* predict_stock_on_news/*.py
+	
 
 all: clean install test black check_code
-#  Command line target.
+#  Command-line target.
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/2=0%
 
 install_requirements:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 5):
+#  commands to execute (from `Makefile', line 5):
 	@pip install -r requirements.txt
+	
 
 pypi:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 55):
+#  commands to execute (from `Makefile', line 55):
 	@twine upload dist/* -u $(PYPI_USERNAME)
+	
 
 # Not a target:
 .SUFFIXES:
@@ -240,47 +248,52 @@ pypi:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-29 16:18:17.837283065
+#  Last modified 2022-08-29 14:24:33
 #  File has been updated.
 #  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 test:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 14):
+#  commands to execute (from `Makefile', line 14):
 	@coverage run -m pytest tests/*.py
 	@coverage report -m --omit="${VIRTUAL_ENV}/lib/python*"
+	
 
 build:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 49):
+#  commands to execute (from `Makefile', line 49):
 	@python setup.py sdist bdist_wheel
+	
 
 check_code:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 8):
+#  commands to execute (from `Makefile', line 8):
 	@flake8 scripts/* predict_stock_on_news/*.py
+	
 
 count_lines:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 34):
+#  commands to execute (from `Makefile', line 34):
 	@find ./ -name '*.py' -exec  wc -l {} \; | sort -n| awk \
-        '{printf "%4s %s\n", $$1, $$2}{s+=$$0}END{print s}'
+	'{printf "%4s %s\n", $$1, $$2}{s+=$$0}END{print s}'
 	@echo ''
 	@find ./scripts -name '*-*' -exec  wc -l {} \; | sort -n| awk \
- 
-		        '{printf "%4s %s\n", $$1, $$2}{s+=$$0}END{print s}'
+	'{printf "%4s %s\n", $$1, $$2}{s+=$$0}END{print s}'
 	@echo ''
 	@find ./tests -name '*.py' -exec  wc -l {} \; | sort -n| awk \
-        '{printf "%4s %s\n", $$1, $$2}{s+=$$0}END{print s}'
+	'{printf "%4s %s\n", $$1, $$2}{s+=$$0}END{print s}'
 	@echo ''
+	
 
 # Not a target:
 .DEFAULT:
@@ -290,7 +303,8 @@ count_lines:
 
 clean:
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
+ 
+#  Implicit/static pattern stem: `'
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
@@ -311,50 +325,53 @@ clean:
 # automatic
 # ? := 
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
-#  recipe to execute (from 'Makefile', line 21):
+# Load=8/32=25%, Rehash=0, Collisions=1/10=10%
+#  commands to execute (from `Makefile', line 21):
 	@rm -f */version.txt
 	@rm -f .coverage
 	@rm -fr */__pycache__ */*.pyc __pycache__
 	@rm -fr build dist
 	@rm -fr predict_stock_on_news-*.dist-info
 	@rm -fr predict_stock_on_news.egg-info
+	
 
 ftest:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 18):
+#  commands to execute (from `Makefile', line 18):
 	@Write me
+	
 
 pypi_test:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 52):
+#  commands to execute (from `Makefile', line 52):
 	@twine upload -r testpypi dist/* -u $(PYPI_USERNAME)
+	
 
 install:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 29):
+#  commands to execute (from `Makefile', line 29):
 	@pip install . -U
+	
 
 # files hash-table stats:
-# Load=15/1024=1%, Rehash=0, Collisions=0/32=0%
+# Load=15/1024=1%, Rehash=0, Collisions=0/34=0%
 # VPATH Search Paths
 
-# No 'vpath' search paths.
+# No `vpath' search paths.
 
-# No general ('VPATH' variable) search path.
+# No general (`VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 33 / storage = 312 B / avg = 9 B
-# current buf: size = 8162 B / used = 312 B / count = 33 / avg = 9 B
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# strcache performance: lookups = 56 / hit rate = 41%
-# hash-table stats:
-# Load=33/8192=0%, Rehash=0, Collisions=1/56=2%
-# Finished Make data base on Mon Aug 29 16:57:13 2022
+# Finished Make data base on Thu Sep  8 14:11:26 2022
 
  
