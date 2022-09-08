@@ -12,7 +12,9 @@ lightgbm
 tensorflow
 tqdm
 plotly
-Prophet
+
+fbprophet
+
 statsmodels
 pandas_datareader
 yfinance
