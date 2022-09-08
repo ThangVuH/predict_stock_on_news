@@ -7,7 +7,7 @@ import pandas as pd
 import plotly.express as px
 from statsmodels.tools.eval_measures import rmse
 import numpy as np
-
+import plotly.graph_objects as go
 
 # Facebook specific
 # pip install pystan~=2.14  #This specific version of pystan must be installed to have fbprophet
@@ -68,6 +68,13 @@ def forecasting(self):
 # Plot your graph (model and prediction)
 def plot_forecast(model, prediction):
   return plot_plotly(model, prediction)
+
+# custom function to set fill color
+
+
+
+
+
 
 ############# Example of code ###############
 ## Prepocess data
