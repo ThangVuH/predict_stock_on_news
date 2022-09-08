@@ -16,3 +16,6 @@ Prophet
 statsmodels
 pandas_datareader
 yfinance
+
+transformers
+anvil-uplink
