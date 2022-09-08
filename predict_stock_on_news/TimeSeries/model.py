@@ -36,10 +36,12 @@ data = df_main()
 
 def data_processing(self):
     self = self.reset_index()
-    self['Date'] >= '2018-01-01'
+    self = self.loc[self['Date'] >= '2018-01-01']
     df = self[['Date', 'Close']]
     df.columns = ['ds', 'y']
     return df
+
+
 
 def fit_model(self):
     """### Creating and Training the model
