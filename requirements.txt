@@ -2,22 +2,22 @@
 numpy
 pandas
 
-nltk
-textblob
-vaderSentiment
-gensim
-sklearn
-xgboost
-lightgbm
-tensorflow
-tqdm
+# nltk
+# textblob
+# vaderSentiment
+# gensim
+# sklearn
+# xgboost
+# lightgbm
+# tensorflow
+# tqdm
 plotly
 
 fbprophet
 
-statsmodels
+# statsmodels
 pandas_datareader
 yfinance
 
-transformers
-anvil-uplink
+# transformers
+# anvil-uplink

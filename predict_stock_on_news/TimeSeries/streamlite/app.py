@@ -1,4 +1,4 @@
-from turtle import width
+# from turtle import width
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -96,7 +96,7 @@ nyt_text = data_nyt.loc[data_nyt['Date'] == datee]['News']
 
 st.markdown("------")
 st.header(nyt_text.values)
-
+st.markdown("------")
 
 
 merged_df = dataf.merge(p, how='left', on='ds')
