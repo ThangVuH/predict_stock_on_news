@@ -2,6 +2,7 @@
 import pandas as pd
 from pandas_datareader import data as pdr
 from datetime import datetime
+import numpy as np
 
 import yfinance as yf
 
